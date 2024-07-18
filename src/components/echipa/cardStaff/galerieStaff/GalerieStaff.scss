@@ -1,0 +1,62 @@
+.titluStaff {
+  font-family: Electrolize;
+  font-size: 28px;
+  letter-spacing: 1.4px;
+  background-color: #155885;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+
+.galerie-carduri {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .mesaj-nodate {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2%;
+    text-align: center;
+
+    .card-antrenor {
+      max-width: 100%;
+      margin-bottom: 20px;
+      align-self: center;
+    }
+
+    .carduri-staff {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 70%;
+      justify-items: center;
+    }
+
+    .card-staff {
+      max-width: 250px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .carduri-staff {
+      grid-template-columns: repeat(4, minmax(150px, 4fr));
+    }
+  }
+
+}

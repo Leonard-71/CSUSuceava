@@ -1,0 +1,71 @@
+.clasament {
+    background-color: #1E1E1E;
+    margin-bottom: 2%;
+
+    .title-container {
+        margin-top: 7%;
+        margin-left: 7%;
+        color: white;
+
+        .ultimul-meci {
+            font-size: 34px;
+            margin: 0px;
+            margin-top: 1%;
+        }
+
+        .liga-text {
+            font-size: 14px;
+            color: gray;
+        }
+    }
+
+    .clasament-echipe {
+        width: 90%;
+        background-color: white;
+        margin-left: 7%;
+        margin-bottom: 2%;
+        overflow-x: auto;
+
+        .tableClasament {
+            width: 100%;
+            font-family: Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            font-size: 16px;
+
+            .csu-suceava-row {
+                background-color: #227ebbb9
+            }
+
+            .trClasament {
+                &:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+
+                &:hover {
+                    background-color: #155885a9;
+                }
+
+                .thClasament,
+                .tdClasament {
+                    text-align: center;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .clasament {
+        margin-bottom: 9%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clasament {
+        margin-bottom: 9%;
+    }
+}

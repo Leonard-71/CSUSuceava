@@ -1,0 +1,40 @@
+.containerStiriFiltrate {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 2%;
+  }
+  
+  .cardStire {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    background-color: rgba(155, 155, 221, 0.86);
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+  
+    .sectiuneData {
+      flex: 1;
+      padding: 10px;
+      margin: 5px;
+      width: 4%;
+      word-wrap: break-word;
+    }
+  
+    .sectiuneSeparator {
+      width: 2px;
+      height: 85%;
+      background-color: rgb(0, 0, 0);
+      margin: 0 5px;
+    }
+  
+    .sectiuneTitlu {
+      flex: 9;
+      padding: 10px;
+      margin: 5px;
+      text-align: left;
+    }
+  }
+  

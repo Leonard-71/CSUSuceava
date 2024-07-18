@@ -1,0 +1,128 @@
+.modal-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  
+    .modal-content-signup {
+      background-color: rgba(21, 88, 133, 1);
+      padding: 20px;
+      border-radius: 5px;
+      color: white;
+      position: relative;
+      max-width: 600px;
+      height: 400px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+  
+        .username-container{
+            margin-top:10%
+        }
+        .username-container,
+        .firstname-container,
+        .lastname-container,
+        .email-container,
+        .password-container {
+          display: flex;
+          align-items: center;
+          margin-bottom: 3%;
+          gap: 5%;
+  
+          label {
+            width: 30%; 
+          }
+  
+          input {
+            width: 80%;
+            border-radius: 30px;
+            text-align: center;
+  
+            &::placeholder {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+  
+      .password-container {
+        margin-left: 0;
+        margin-bottom: 8%;
+
+        .parola-buton {
+          position: absolute;
+          top: 59.5%;
+          right: 24px;
+          color: black;
+          transform: translateY(-50%);
+          background: transparent;
+          border: none;
+          padding: 4px;
+          cursor: pointer;
+          outline: none;
+        }
+  
+      }
+  
+      h2 {
+        margin-bottom: 20px;
+      }
+  
+      button {
+        padding: 8px 20px;
+        background-color: rgba(217, 217, 217, 1);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: grey;
+        }
+      }
+  
+      .close {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+  
+        &:hover {
+          color: red;
+        }
+      }
+  
+      .container-butoane-login {
+        display: flex;
+        gap: 10%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+  
+        .butoane-logare {
+          display: flex;
+          justify-content: center;
+          width: 60%;
+          height: 30px;
+          align-items: center;
+          border-radius: 10px;
+          gap: 10px;
+          color: black;
+        }
+      }
+    }
+  }
+  

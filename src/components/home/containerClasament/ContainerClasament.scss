@@ -1,0 +1,24 @@
+.meciuri-container {
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+}
+
+@media screen and (max-width: 1024px) {
+    .meciuri-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 2%;
+        gap:2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .meciuri-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 2%;
+        gap:2%;
+    }
+}
+

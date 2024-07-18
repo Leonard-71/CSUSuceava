@@ -1,0 +1,34 @@
+.cardStire {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    background-color: #2474aa93;
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    margin-bottom:3%
+  }
+  
+  .sectiuneData {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    width: 4%;
+    word-wrap: break-word;
+  }
+  
+  .sectiuneSeparatorStire1 {
+    width: 2px;
+    height: 85%;
+    background-color: black; 
+    margin: 0 5px;
+  }
+  
+  .sectiuneTitlu {
+    flex: 8;
+    padding: 10px;
+    margin: 5px;
+    text-align: left;
+  }
+  

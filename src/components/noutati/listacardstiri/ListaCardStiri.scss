@@ -1,0 +1,25 @@
+.sageata-in-jos,
+.sageata-in-sus {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sageata-in-jos:hover,
+.sageata-in-sus:hover {
+  background-color: darkgray;
+}
+.mesaj-eroare{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}

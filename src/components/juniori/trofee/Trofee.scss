@@ -1,0 +1,42 @@
+.card-trofeu {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
+  width: 300px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .imagine-trofeu {
+    max-width: 280px;
+    max-height: 140px;
+  }
+
+  .denumire-trofeu,
+  .pozitie-trofeu,
+  .an-trofeu {
+    color: #FFF;
+    font-family: Electrolize;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .denumire-trofeu {
+    font-size: 28px;
+    letter-spacing: 1.4px;
+  }
+
+  .pozitie-trofeu {
+    font-size: 25px;
+    letter-spacing: 1.2px;
+  }
+
+  .an-trofeu {
+    font-size: 22px;
+    letter-spacing: 1.0px;
+  }
+}

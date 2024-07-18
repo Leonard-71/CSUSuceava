@@ -1,0 +1,49 @@
+.dropdown-container {
+  .select-sponsori {
+    padding: 4px;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+      border-color: #000000;
+    }
+
+    &:focus {
+      border-color: #000000;
+    }
+  }
+}
+
+
+
+.logo-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+  
+  
+  .logo-item {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.logo-item {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    width: 100px;
+    height: 100px; 
+}
+  
+  .logo-item:hover {
+    transform: scale(1.1);
+  }
+
+}
+  
