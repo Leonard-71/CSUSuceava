@@ -1,0 +1,49 @@
+.card {
+  background-color: #155885;
+  min-width: 480px;
+  max-width: 480px;
+  max-height: 350px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+
+  .imagineCard {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%; 
+      max-height: 185px; 
+      object-fit: fill; 
+    }
+  }
+
+  .continutText {
+    padding: 1rem;
+    width: 98%;
+    height: 80%;
+
+    .titluStire {
+      font-size: 20px;
+      text-align: left;
+      font-style: italic;
+    }
+
+    .continutStire {
+      margin-bottom: 5%;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+
+  .butonLink {
+    float: right;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+}

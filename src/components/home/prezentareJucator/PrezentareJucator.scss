@@ -1,0 +1,148 @@
+.container-prezentare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(21, 88, 133);
+  background: radial-gradient(circle, rgba(21, 88, 133, 1) 15%, rgba(0, 0, 0, 1) 69.5%);
+  opacity: 1;
+  z-index: 999;
+  margin-bottom: 200px;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  .titluEchipa {
+    font-size: 60px;
+    color: #FFF;
+    font-family: Roboto;
+  }
+
+  @keyframes gradientAnimation {
+    50% {
+      background-position: left top;
+    }
+
+    100% {
+      background-position: right top;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .titluEchipa {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .titluEchipa {
+      font-size: 40px;
+      margin-left: 20%;
+    }
+  }
+
+  .tabs {
+    margin-bottom: 2%;
+    background-color: #D9D9D9;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+    .tab-buttons {
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid #000000;
+      background-color: #0c6199d7;
+      padding: 10px 15px;
+      text-align: center;
+      padding-top: 4%;
+
+
+      button {
+        animation: tabFadeIn 0.4s ease-in-out;
+        background-color: transparent;
+        border: none;
+        padding: 10px 24px;
+        cursor: pointer;
+        outline: none;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        border-radius: 25px;
+        font-size: 24px;
+        margin-top: 2%;
+
+        &.active {
+          color: #333;
+          background-color: #D9D9D9;
+          font-weight: bold;
+        }
+      }
+    }
+
+
+    .tab-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 60px;
+      width: 100%;
+      min-height: 810px;
+      max-height: 810px;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 32px;
+      color: rgb(134, 128, 197);
+      z-index: 1;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #3f3f95;
+      }
+    }
+
+
+
+
+    @keyframes tabFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    .tabs {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .tabs {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+}

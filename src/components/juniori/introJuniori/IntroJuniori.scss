@@ -1,0 +1,78 @@
+.image-container-juniori {
+  display: flex;
+
+  .imageIntro1-juniori {
+    margin-top: 2%;
+    width: 100%;
+    height: 500px;
+    background-image: url('../../assets/juniori/imageJunioriBack.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+.details-container-juniori {
+  background-color: #155885;
+  display: flex;
+  margin: 20px 50px;
+  padding: 10px;
+  font-family: Electrolize;
+  color: white;
+
+  .titleIntro-juniori {
+    flex: 0 0 70%;
+    padding-right: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 1.6px;
+    margin-bottom: 5%;
+  }
+
+  .infoIntro-juniori {
+    margin-top: 20px;
+    margin-right: 2%;
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 1.4px;
+    flex: 1;
+  }
+
+  .imageIntro-juniori {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: flex-end;
+
+    .imagineIntro-juniori {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+
+    .titleIntro-juniori {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .infoIntro-juniori {
+      margin-right: 0;
+      margin-top: 10px;
+    }
+
+    .imageIntro-juniori {
+      margin-top: 20px;
+
+      .imagineIntro-juniori {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+.ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(4, 18, 31, 0.74);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-jucator-admin {
+    position: relative;
+    background-color: rgb(255, 254, 254);
+    border-radius: 8px;
+    margin-left: 10%;
+    padding: 20px;
+    width: 60%;
+    height: 700px;
+    max-width: 90%;
+    box-shadow: 0 6px 30px rgba(59, 53, 53, 0.836);
+    outline: none;
+
+
+    .close-button {
+        z-index: 2;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        padding: 8px 16px;
+        border: none;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 4px;
+        background-color: transparent;
+        color: #d41818;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            color: #790808;
+        }
+    }
+
+
+
+    .modal-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        margin: 10px;
+
+        .left-column {
+            flex: 1;
+            padding: 20px;
+            background-color:#155885c5;/* #f2f2f2;*/
+
+            img {
+                margin-top: 8%;
+                margin-left: 13%;
+                display: block;
+                width: 370px;
+                height: 450px;
+            }
+
+            .button-incarca-imagine {
+                margin-top: 5%;
+                margin-left: 35%;
+                padding: 10px 15px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                background-color: #007bff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+
+                input[type="file"] {
+                    display: none;
+                }
+            }
+
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            font-family: Inter;
+            font-size: 18px;
+            margin-top: 15%;
+
+            div {
+                margin-left: 5%;
+                display: flex;
+                flex-direction: column;
+                float: right;
+                justify-content: center;
+
+                input[type="text"] {
+                    align-items: center;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    float: right;
+                    width: 50%;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 18px;
+                    margin-right: 15%;
+                }
+
+                .react-datepicker-wrapper {
+                    width: 340px;
+                    display: inline-block;
+                    position: relative;
+                }
+
+
+
+
+                .select-pozitie-jucator {
+                    margin-left: 21%;
+                    width: 50%;
+                    padding: 8px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    color: #333;
+                    cursor: pointer;
+                    transition: border-color 0.3s ease;
+
+                    &:hover,
+                    &:focus {
+                        border-color: #007bff;
+                    }
+                }
+
+
+
+            }
+
+            button {
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+                margin-left: 32%;
+                width: 35%;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+        }
+
+
+    }
+}

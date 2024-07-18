@@ -1,0 +1,204 @@
+.imaginePromoMeci {
+    margin-top: 1%;
+    height: 600px;
+    width: 100%;
+    background-color: #504b5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/bg.jpg');
+    filter: grayscale(30%);
+  }
+  
+  .descriereMeciUrmator {
+    position: absolute;
+    top: 0;
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 35px;
+    letter-spacing: 4.5px;
+  }
+  
+  .anuntMeci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  
+    .logo-echipe {
+      display: flex;
+      align-items: center;
+  
+      .logo1, .logo2 {
+        max-width: 40%;
+        max-height: 60%;
+        margin-left: 1%;
+        margin-bottom: 10%;
+        object-fit: cover;
+      }
+  
+      .vs {
+        color: #000;
+        font-family: Audiowide;
+        font-size: 36px;
+        line-height: normal;
+        letter-spacing: 3.6px;
+        margin-left: 1%;
+        margin-bottom: 6%;
+        font-style: italic;
+      }
+    }
+  
+    .logo-echipe, .informatii-meci {
+      width: 50%;
+      box-sizing: border-box;
+    }
+  
+    .info-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      color: #fff;
+      text-align: center;
+      margin-top: 2%;
+      
+      .ora-data {
+        font-size: 18px;
+        color: #000000;
+        text-align: center;
+        font-family: Electrolize;
+        letter-spacing: 4px;
+      }
+    }
+  
+    .echipe {
+      color: #000;
+      top: 0;
+      text-align: center;
+      font-family: Arial;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      margin-top: 12%;
+    }
+  
+    .ligaNadionala {
+      color: rgba(0, 0, 0, 0.80);
+      text-align: left;
+      margin-left: 2%;
+      font-family: Arial;
+      margin-top: 2%;
+      font-size: 17px;
+      letter-spacing: 1.4px;
+    }
+  
+    .etapaMeci {
+      color: #000;
+      text-align: left;
+      margin-left: 2%;
+      font-family: Electrolize;
+      font-size: 17px;
+      margin-top: 2%;
+      letter-spacing: 1.4px;
+    }
+  
+    .locatieMeci {
+      color: rgba(0, 0, 0, 0.80);
+      text-align: left;
+      margin-left: 2%;
+      font-family: Arial;
+      margin-top: 2%;
+      margin-bottom: 6%;
+      font-size: 17px;
+      letter-spacing: 1.4px;
+    }
+  
+    .design {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 44px;
+      width: 100%;
+      background-color:  #155885;
+      margin-bottom: 3%;
+      color: white;
+      display: flex;
+      justify-content: center;
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 25px;
+  
+        &:hover {
+          color: #D9D9D9;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 1850px) {
+        width: 40%;
+        padding: 20px;
+        height: 65%;
+    
+        .anuntMeci {
+          width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 1550px) {
+        width: 50%;
+        padding: 20px;
+        height: 65%;
+    
+        .anuntMeci {
+          width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 80%;
+        padding: 20px;
+        height: 65%;
+    
+        .anuntMeci {
+          width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        padding: 20px;
+        height: 65%;
+    
+        .anuntMeci {
+          width: 90%;
+        }
+      }
+
+      @media screen and (max-width: 650px) {
+        width: 95%;
+        padding: 20px;
+        height: 90%;
+        margin-left: 2%;
+        margin-top: 10%;
+    
+        .anuntMeci {
+          width: 800%;
+        }
+      }
+  }
+  

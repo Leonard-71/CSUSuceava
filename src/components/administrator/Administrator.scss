@@ -1,0 +1,40 @@
+.admin-container {
+  display: flex;
+  min-height: 83vh;
+  padding-top: 70px;
+
+
+.sidebar {
+  width: 10%;
+  background-color: #333;
+  color: #fff;
+
+  ul {
+    margin-top: 50%;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin: 0.4%
+}
+
+}

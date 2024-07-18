@@ -1,0 +1,159 @@
+.meci-trecut {
+    background-color:#bcd7e7;
+    height: 300px;
+    margin-top: 10%;
+    position: relative;
+    z-index: 1;
+
+    .title-container {
+        margin-top: 20px;
+        margin-left: 35px;
+        color: white;
+
+        .ultimul-meci {
+            font-size: 34px;
+            margin: 0px;
+            margin-top: 3px;
+            margin-bottom: -10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .liga-text {
+            font-size: 14px;
+            margin: 0px;
+            color: #3D3B3B;
+        }
+    }
+
+    .data-container {
+        margin-top: 8%;
+        background-color: #155885;
+        width: 94%;
+        height: 60%;
+        margin-left: 20px;
+        position: absolute;
+        left: 15px;
+
+        .header-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo-liga {
+                width: 35%;
+            }
+
+            .data-meci {
+                color: #D9D9D9;
+                font-size: 14px;
+                margin-right: 4%;
+            }
+        }
+
+        .middle-data {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 4%;
+
+            .echipa-scor {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-right: 20px;
+
+                .echipaAcasa,
+                .echipaDeplasare {
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-start;
+                    max-width: 75%;
+                    margin-left: 2%;
+                    margin-top: 2.5%;
+
+                    .nume-echipa {
+                        margin-left: 1%;
+                        font-size: 20px;
+                        color: #fafafa;
+                    }
+                }
+
+                .scor-echipa {
+                    margin-right: 5%;
+                    font-size: 20px;
+                    color: #ffeded;
+                }
+            }
+        }
+
+        .bottom-data {
+            margin-top: -4%;
+
+            .galerie-meci {
+                display: inline-block;
+                color: white;
+                margin-left: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        color: #D9D9D9;
+                    }
+                }
+
+                .arrow {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .meci-trecut {
+        height: auto;
+        margin-top: 20px;
+
+        .title-container {
+            margin-left: 20px;
+
+            .ultimul-meci {
+                font-size: 28px;
+            }
+        }
+
+        .data-container {
+            width: 90%;
+            margin-left: 5%;
+            position: relative;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .meci-trecut {
+        .title-container {
+            margin-left: 15px;
+
+            .ultimul-meci {
+                font-size: 24px;
+            }
+        }
+
+        .data-container {
+            width: 90%;
+            margin-left: 5%;
+            position: relative;
+            left: 0;
+        }
+    }
+}

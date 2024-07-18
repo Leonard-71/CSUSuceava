@@ -1,0 +1,61 @@
+.coloanadreapta {
+    border-radius: 5px;
+    height:fit-content;
+    margin-top: 0.5%;
+    margin-right:2%;
+    width:35%;
+    background: #D9D9D9;
+  }
+  .calendarstire{
+    margin-top: 0.5%;
+    margin-bottom: 15%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:7%;
+    .stire-Dropdown {
+      padding: 8px;
+      font-size: 18px;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      width: 200px;
+      outline: none; 
+      cursor: pointer;
+      margin-bottom: 1%;
+      background-color:#3F3F95;
+      color: white;
+      font-family: Electrolize;
+      
+      option {
+        font-size: 20px;
+      }
+    }
+  }
+  .separator{
+    display:flex;
+    margin-top:10%
+  }
+  .carduri-lista-stiri{
+    width:100%;
+    margin:2%;
+  }
+  
+  .vl {
+    border-left: 1px solid black;
+    height: 50px;
+  }
+  .data p{
+    margin-top:-50%;
+  }
+  
+  
+  .separatorListaStiri{
+    width:94%;
+    background-color:black;
+    height:2px;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top:-8%;
+    margin-bottom:7%;
+  }
+  

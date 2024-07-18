@@ -1,0 +1,57 @@
+.palmaresJuniori {
+    background-color: #155885;
+    margin:20px 50px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  
+  .titlu-palmaresJuniori {
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: center; 
+  }
+  
+  .container-trofee {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50%;
+  }
+  
+  
+  
+  .container-trofee .trofee {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
+  
+    .imagine-trofeu {
+     width: 50%;
+     height: 50%;
+    }
+  
+    .denumire-trofeu,
+    .pozitie-trofeu,
+    .an-trofeu {
+      color: #fff;
+      font-family: Electrolize;
+      font-size: 22px;
+      font-style: normal;
+      letter-spacing: 1.1px;
+    }
+  }

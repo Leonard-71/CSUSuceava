@@ -1,0 +1,126 @@
+.despre {
+  padding-top: 80px;
+  max-width: 100%;
+  color: black;
+
+  .titlu {
+    text-align: center;
+   /* background-color: #D9D9D9;*/
+    padding: 10px;
+    margin-bottom: 2%;
+
+    .image-container {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 10px;
+
+      .image {
+        max-width: 600px;
+        height: 337px;
+      }
+    }
+  }
+  .viziune {
+    color: black;
+    display: flex-end;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+  }
+
+  .istoric {
+    display: flex;
+    text-align: center;
+    background-color: #155885;
+    justify-content: center;
+    color: rgba(223, 218, 218, 0.938);
+  }
+
+  .viziuneText {
+    display: flex;
+    text-align: center;
+    width: 60%;
+    margin-left: 21%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #faf8f83d;
+    justify-content: center;
+    font-size: larger;
+  }
+
+  .trofee {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #155885;
+    color: rgba(223, 218, 218, 0.938);
+  }
+
+  .palmares {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 2fr));
+    grid-gap: 10px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    justify-items: center;
+  
+    .coluna {
+      width: 100%;
+      box-sizing: border-box;
+  
+      .card {
+        border: 1px solid #ccc;
+        padding: 16px;
+        margin-left: 20%;
+  
+        .year,
+        .trophyName,
+        .separator {
+          margin-right: 10px;
+        }
+      }
+    }
+  
+    @media (max-width: 1500px) {
+      grid-template-columns: 1fr;
+      justify-items: center; 
+      .coluna {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .palmares {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      .coluna {
+        width: 97%;
+        margin-left: auto;
+        margin-right: auto;
+        .card {
+          margin-left: 0.2%;
+        }  
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .palmares {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    .coluna {
+      width: 100%; 
+    }
+
+  }
+}

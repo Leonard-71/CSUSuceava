@@ -1,0 +1,39 @@
+.card-junior {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #0d253523;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+
+  img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  .text-container-junior {
+    h3 {
+      margin: 0;
+      font-size: 28px;
+      color: #333;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 22px;
+      color: #3b3b3b;
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient( rgba(15, 78, 129, 0.842), rgb(196, 200, 202));
+    transform: translateY(-5px);
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,93 @@
+.container-echipa-admin {
+    width: 100%;
+    margin: 0 auto;
+    
+    .lista-echipe {
+      margin-top: 20px;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+  
+      &:hover {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      
+    }
+
+    table {
+      margin-left: 5%;
+      margin-top: 2%;
+      width: 90%;
+      border-collapse: collapse;
+      border: 6px solid black;
+      font-size: 19px;
+      
+      th, td {
+        padding: 8px;
+        border: 1px solid black;
+        text-align: center;
+      }
+
+      th.hidden,td.hidden {
+        display: none;
+      }
+      
+      th {
+        background-color: #326283;
+        color: aliceblue;
+      }
+      
+      tbody tr:nth-child(even) {
+        background-color: #588aadd5;
+        color: aliceblue;
+      }
+      button {
+        border: none;
+        margin-right: 20px;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: transparent;
+        transition: background-color 0.3s ease;
+      }
+      
+  
+      button:hover {
+        background-color: #a2bcdf;
+      }
+  
+      button:focus {
+        outline: none;
+      }
+  
+      .edit-button {
+        color: #000000;
+      }
+  
+      .delete-button {
+        color: #e92a3de5;
+      }
+
+    }
+
+    .adauga-jucator-button{
+      width: 90%;
+      margin-top: 2%;
+      margin-left: 5%;
+      height: 60px;
+      font-size: 30px;
+      color: #f4f4f4;
+      background-color: #326283;
+      border-radius: 10px;
+      border: 3px solid black;
+    }
+  }
+  

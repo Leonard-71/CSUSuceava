@@ -1,0 +1,231 @@
+.containerMeciuriViitoare {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .cardMeciuriViitoare {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 110px;
+    background-color: #2474aaab;
+    margin-bottom: 1%;
+
+    .wrapperContainerViitoare {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 35%;
+
+      .logoContainerViitoare {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28%;
+        flex-shrink: 0;
+
+        .logoLigaViitorare {
+          width: 90%;
+          height: 60%;
+          object-fit: contain;
+        }
+      }
+
+      .infoContainer {
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+      }
+
+      .bara-verticala-viitoare {
+        border-left: 2px solid black;
+        height: 75px;
+        margin: 0 20px;
+      }
+
+      .infoData {
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1%;
+        font-weight: bold;
+      }
+    }
+
+
+    
+
+    .elementeMeciuri {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 50%;
+
+      .logoEchipaGazda {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+
+        .numeEchipaGazda {
+          margin: 0;
+          color: #000;
+          font-family: Arial;
+          font-size: 23px;
+          line-height: normal;
+          letter-spacing: 1.6px;
+          margin-right: 1%;
+          margin-left: 30%;
+        }
+
+        img {
+          max-width: 100px;
+          height: auto;
+          margin: 0 10px;
+
+          .logoLigaMeciViitor {
+            min-width: 90px;
+            min-height: 90px;
+            max-width: 100px;
+            max-height: 100px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .separator {
+        margin-top: 1%;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .logoEchipaOaspete {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: left;
+
+        .numeEchipaOaspete {
+          margin: 0;
+          color: #000;
+          font-family: Arial;
+          font-size: 23px;
+          line-height: normal;
+          letter-spacing: 1.6px;
+          margin-right: 30%;
+          margin-left: 1%;
+        }
+
+        img {
+          max-width: 100px;
+          height: auto;
+          margin: 0 10px;
+
+          .logoLigaMeciViitor {
+            min-width: 90px;
+            min-height: 90px;
+            max-width: 100px;
+            max-height: 100px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .containerOraMeci {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 5%;
+      margin-left: 7%;
+
+      .ora {
+        color: #000;
+        text-align: center;
+        font-family: Electrolize;
+        font-size: 35px;
+        letter-spacing: 3.2px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2%;
+
+      .wrapperContainerViitoare {
+        max-width: 100%;
+        margin-left: 10%;
+      }
+
+      .elementeMeciuri {
+        min-width: 100%;
+      }
+
+      .containerOraMeci {
+        min-width: 100%;
+        margin-left: 90%;
+        margin-top: 5%;
+      }
+    }
+
+    @media screen and (max-width: 1825px) {
+      width: 80%;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2%;
+
+      .wrapperContainerViitoare {
+        margin-top: 2%;
+        margin-bottom: 3%;
+        max-width: 80%;
+        margin-left: 10%;
+      }
+
+      .elementeMeciuri {
+        min-width: 70%;
+      }
+
+      .containerOraMeci {
+        min-width: 100%;
+        margin-left: 95%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      width: 70%;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2%;
+
+      .wrapperContainerViitoare {
+        max-width: 40%;
+        margin-right: 40%;
+      }
+
+      .elementeMeciuri {
+        max-width: 90%;
+        flex-direction: column;
+      }
+
+      .containerOraMeci {
+        min-width: 40%;
+        margin-left: 20%;
+        margin-bottom: 2%;
+      }
+    }
+
+
+  }
+}
